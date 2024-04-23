@@ -1,0 +1,6 @@
+<!--  
+  Context fragment for deploying ring2park-online.war  
+ -->
+<Context path="/qlarius-online" docBase="webapps/qlarius-online.war" 
+         debug="0" privileged="true">
+</Context>
