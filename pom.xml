@@ -15,7 +15,7 @@
 		<org.aspectj-version>1.8.2</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
         <maven.test.skip>true</maven.test.skip>
-		<qlarius.test>true</qlarius.test>
+		<qlarius.test>false</qlarius.test>
 	</properties>
 	<dependencies>
 
