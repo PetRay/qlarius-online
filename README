@@ -10,7 +10,10 @@ To get up and running:
 	- (if required) create sample users and data using src/main/resources/import.sql
 	- build the application using maven (mvn package) and install the resultant WAR file in your container
 
-Default logins are admin/password, fred/password, barney/password.	
+Default logins are:
+  - admin/password
+  - fred/password
+  - barney/password.	
 	
 Peter Raymond (praymond@opentext.com)
 
