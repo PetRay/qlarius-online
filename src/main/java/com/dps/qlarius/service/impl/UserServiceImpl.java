@@ -110,6 +110,7 @@ public class UserServiceImpl implements UserService {
 			roles.add(roleDao.find("ROLE_USER"));
 			user.setRoles(roles);
 		}
+		// TODO: Implement frequent customer discount
 		userDao.persist(user);
 		return user;
 	}

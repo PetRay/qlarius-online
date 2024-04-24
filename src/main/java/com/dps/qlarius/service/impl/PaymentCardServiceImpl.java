@@ -23,6 +23,8 @@ public class PaymentCardServiceImpl implements PaymentCardService {
 		Arrays.asList("Visa", "Mastercard", "Visa Debit",
 			"ApplePay", "American Express", "Diners Card");
 
+	private static final boolean isFrequentCustomer = false;
+
 	@Autowired
 	private PaymentCardDao paymentCardDao;
 	
@@ -83,7 +85,9 @@ public class PaymentCardServiceImpl implements PaymentCardService {
 
 	public int charge(int amount) {
 		int total = amount;
-		total=(int)(amount*1.14);
+		if (!isFrequentCustomer) {
+			total=(int)(amount*1.14);
+		}
 		return total;
 	}
 	
